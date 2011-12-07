@@ -1,0 +1,161 @@
+{% load cms_tags sekizai_tags %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>œô¨³œô¨Ûœô¨Ðœô¨Òœô¨Ýœô¨Ðœô¨ï | Speed Racing - Free Website Template from
+  Templates.com</title>
+{% render_block "css" %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Place your description here" />
+<meta name="keywords" content="put, your, keyword, here" />
+<meta name="author" content="Unknown" />
+<link href="/media/style.css" rel="stylesheet" type="text/css" />
+<script src="/media/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+			<div class="fright">
+				<ul>
+					<li><a href="/"><img src="/media/images/icon1-act.gif" alt="" /></a></li>
+					<li><a href="/contact-us"><img src="/media/images/icon2.gif" alt="" /></a></li>
+					<li><a href="/sitemap"><img src="/media/images/icon3.gif" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row-2">
+			<div class="left">
+				<ul>
+					<li><a href="/" class="active"><span>œô¨³œô¨Ûœô¨Ðœô¨Òœô¨Ýœô¨Ðœô¨ï</span></a></li>
+					<li><a href="/about"><span>œô¨¾ œô¨Ýœô¨Ðœô¨á</span></a></li>
+					<li><a href="/articles"><span>œô¨°œô¨Úœô¨áœô¨Õœô¨áœô¨áœô¨ãœô¨Ðœô¨àœô¨ë</span></a></li>
+					<li><a href="/contact-us"><span>œô¨ºœô¨Þœô¨Ýœô¨âœô¨Ðœô¨Úœô¨âœô¨ë</span></a></li>
+					<li class="last"><a href="/sitemap"><span>œô¨ºœô¨Ðœô¨àœô¨âœô¨Ð œô¨áœô¨Ðœô¨Ùœô¨âœô¨Ð</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row-3">
+			<div class="inside">
+				<h2> œô¨²œô¨ëœô¨Ñœô¨Øœô¨àœô¨Ðœô¨Õœô¨Ü œô¨Øœô¨× <b> œô¨»œô¨ãœô¨çœô¨èœô¨Õœô¨Óœô¨Þ</b></h2>
+				<form action="" id="search-form">
+					<fieldset><label>œô¨¿œô¨Þœô¨Øœô¨áœô¨Ú:</label><input type="text" /><a href="#" onclick="document.getElementById('search-form').submit()" class="link1"><em><b>Go!</b></em></a></fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="extra"><img src="/media/images/header-img.png" alt="" /></div>
+	</div>
+<!-- CONTENT -->
+	<div id="content"><div class="inner_copy">More <a href="http://www.templatemonster.com/">Website Templates</a> at TemplateMonster.com!</div>
+		<ul class="box-list">
+			<li>
+				<div class="box">
+					<div class="border-bot">
+						<div class="right-bot-corner">
+							<div class="left-bot-corner">
+								<div class="inner">
+									<div class="box1">
+										<div class="inner">
+											<h4><b>œô¨½œô¨Þœô¨Òœô¨Øœô¨Ýœô¨Úœô¨Ø</b></h4>
+											{% placeholder "content_novelty" %}
+											{% block content_novelty%}{% endblock %}
+											<a href="#"><img src="/media/images/arrow.gif" alt="" /></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="alt">
+				<div class="box">
+					<div class="border-bot">
+						<div class="right-bot-corner">
+							<div class="left-bot-corner">
+								<div class="inner">
+									<div class="box1">
+										<div class="inner">
+											<h4><b>œô¨°œô¨Úœô¨æœô¨Øœô¨Ø</b></h4>
+											{% placeholder "content_akcii" %}
+                                                                                        {% block content_akcii%}{% endblock %}
+                                                                                        <a href="#"><img src="/media/images/arrow.gif" alt="" /></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="last">
+				<div class="box">
+					<div class="border-bot">
+						<div class="right-bot-corner">
+							<div class="left-bot-corner">
+								<div class="inner">
+									<div class="box1">
+										<div class="inner">
+											<h4><b>œô¨¾œô¨ßœô¨Ûœô¨Ðœô¨âœô¨Ð œô¨Ø</b> œô¨´œô¨Þœô¨áœô¨âœô¨Ðœô¨Òœô¨Úœô¨Ð</h4>
+											{% placeholder "content_Payment" %}
+                                                                                        {% block content_Payment%}{% endblock %}
+                                                                                        <a href="#"><img src="/media/images/arrow.gif" alt="" /></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="indent">
+			<div class="wrapper">
+				<div class="col-1">
+					<h3><b>œô¨´œô¨Þœô¨Ñœô¨àœô¨Þ œô¨ßœô¨Þœô¨Öœô¨Ðœô¨Ûœô¨Þœô¨Òœô¨Ðœô¨âœô¨ì œô¨Ýœô¨Ð</b> œô¨Áœô¨Ðœô¨Ùœô¨â</h3>
+					{% placeholder "content_Glavniy" %}
+                                        {% block content_Glavniy%}{% endblock %}
+				</div>
+				<div class="col-2">
+					<div class="box2">
+						<div class="border-top">
+							<div class="left-top-corner">
+								<div class="right-top-corner">
+									<div class="inner">
+									  <h4><b></b>œô¨½œô¨Þœô¨Òœô¨Øœô¨Ýœô¨Úœô¨Ø</h4>
+										<ul class="news">
+											<li><a href="#">May 21, 2010</a><p>Lorem ipsum dolor sit amet, coisectur adipisicing elit, sed doeiusmo.</p></li>
+											<li><a href="#">May 12, 2010</a><p>Ut enim ad minim veniam, qnostrud exercitation ullamco.</p></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="box3">
+						<div class="right-bot-corner">
+							<div class="left-bot-corner">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- FOOTER -->
+	<div id="footer">
+		<div class="footer-nav">
+			<div class="left">
+				<ul>
+					<li><a href="/home">œô¨³œô¨Ûœô¨Ðœô¨Òœô¨Ýœô¨Ðœô¨ï</a></li>
+					<li><a href="/about">œô¨¾ œô¨Ýœô¨Ðœô¨á</a></li>
+					<li><a href="/articles">œô¨¿œô¨àœô¨Þœô¨Ôœô¨ãœô¨Úœô¨æœô¨Øœô¨ï</a></li>
+					<li><a href="/contacts-us">œô¨ºœô¨Þœô¨Ýœô¨âœô¨Ðœô¨Úœô¨âœô¨ë</a></li>
+					<li class="last"><a href="/sitemap">œô¨ºœô¨Ðœô¨àœô¨âœô¨Ð œô¨áœô¨Ðœô¨Ùœô¨âœô¨Ð</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bottom">Copyright - Type in your name here<br />
+		</div>
+	</div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+{% render_block "js" %}
+</body>
+</html>
