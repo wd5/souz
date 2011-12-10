@@ -1,7 +1,7 @@
 /* TAGS */
 * {margin:0;padding:0}
 html {min-width:940px} 
-body {background:url(images/tail-top.gif) repeat-x left top #fff;font-family:Tahoma,Arial,helvetica,sans-serif;font-size:100%;line-height:1em;color:#ffffff;min-width:940px}
+body {background:url(images/tail-top.gif) repeat-x left top #fff;font-family:Tahoma,Arial,helvetica,sans-serif;font-size:100%;line-height:1em;color:#000000;min-width:940px}
 object {vertical-align:top;outline:none}
 input,textarea,select {font-family:Tahoma,Arial,helvetica,sans-serif;font-size:1em;vertical-align:middle;font-weight:normal}
 fieldset {border:0}
