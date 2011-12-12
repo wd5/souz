@@ -44,7 +44,7 @@
 				<ul>
 					<li><a href="/"><span>Главная</span></a></li>
 					<li><a href="/about" class="active"><span>О нас</span></a></li>
-					<li><a href="/articles"><span>Аксессуары</span></a></li>
+					<li><a href="/articles"><span>Продукция</span></a></li>
 					<li><a href="/contact-us"><span>Контакты</span></a></li>
 					<li class="last"><a href="/sitemap"><span>Карта сайта</span></a></li>
 				</ul>
@@ -52,7 +52,7 @@
 		</div>
 		<div class="row-3">
 			<div class="inside">
-				<h2>Выбираем из <b>Лучшего</b></h2>
+				<h2 style="color: #ffffff;">Выбираем из <b>Лучшего</b></h2>
 				<form action="" id="search-form">
 					<fieldset><label>Поиск:</label><input type="text" /><a href="#" onclick="document.getElementById('search-form').submit()" class="link1"><em><b>Go!</b></em></a></fieldset>
 				</form>
@@ -69,8 +69,9 @@
 						<div class="inner">
 							<div class="box1 alt">
 								<div class="inner">
-									<h4><b>О чем</b> это сайт</h4>
-									<p class="p0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+									<h4><b>О чем это сайт</b></h4>
+									{% placeholder "about_site" %}
+									{% block about_site%}{% endblock %}
 								</div>
 							</div>
 						</div>
@@ -81,12 +82,10 @@
 		<div class="indent">
 			<div class="wrapper">
 				<div class="col-1">
-					<h3><b>Наша</b> команда</h3>
+					<h3><b>Наша команда</b></h3>
 					<ul class="list">
-						<li><img src="/media/images/2page-img1.jpg" alt="" /><a href="#">Team Member One</a><br />He is the most important member of your team. Usually this is the person who started the website. Maybe it is worth to write why he has made such a decision and what has inspired him.</li>
-						<li><img src="/media/images/2page-img2.jpg" alt="" /><a href="#">Another Team Member</a><br />We are completely lost on what he's responsible for, but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here.</li>
-						<li><img src="/media/images/2page-img3.jpg" alt="" /><a href="#">Another Team Member</a><br />We are completely lost on what he's responsible for, but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here.</li>
-						<li><img src="/media/images/2page-img4.jpg" alt="" /><a href="#">Another Team Member</a><br />We are completely lost on what he's responsible for, but we hope that you know it ;) We also hope that you will tell it to the rest of the world including us by placing some real text here. </li>
+						{% placeholder "about_team" %}
+						{% block about_team%}{% endblock %}
 					</ul>
 				</div>
 				<div class="col-2">
@@ -95,7 +94,7 @@
 							<div class="left-top-corner">
 								<div class="right-top-corner">
 									<div class="inner">
-										<h4><b></b>Новинки</h4>
+										<h4><b></b>Новости</h4>
 										<ul class="news">
 											<li><a href="#">May 21, 2010</a><p>Lorem ipsum dolor sit amet, coisectur adipisicing elit, sed doeiusmo.</p></li>
 											<li><a href="#">May 12, 2010</a><p>Ut enim ad minim veniam, qnostrud exercitation ullamco.</p></li>
@@ -122,7 +121,7 @@
 				<ul>
 					<li><a href="/">Главная</a></li>
 					<li><a href="/about">О нас</a></li>
-					<li><a href="/articles">Аксессуары</a></li>
+					<li><a href="/articles">Продукция</a></li>
 					<li><a href="/contacts-us">Контакты</a></li>
 					<li class="last"><a href="/sitemap">Карта сайта</a></li>
 				</ul>
