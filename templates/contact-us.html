@@ -52,7 +52,7 @@
 		</div>
 		<div class="row-3">
 			<div class="inside">
-				<h2>Выбираем из <b>Лучшего</b></h2>
+				<h2 style="color: #ffffff;">Выбираем из <b>Лучшего</b></h2>
 				<form action="" id="search-form">
 					<fieldset><label>Поиск:</label><input type="text" /><a href="#" onclick="document.getElementById('search-form').submit()" class="link1"><em><b>Go!</b></em></a></fieldset>
 				</form>
@@ -69,13 +69,14 @@
 						<div class="inner">
 							<div class="box1 alt">
 								<div class="inner">
-									<h4><b>Our</b> Contacts</h4>
+									<h4><b>Контакты</b></h4>
 									<div class="address"><b>Zip Code:</b>50122<br />
 										<b>Country:</b>USA<br />
 										<b>Telephone:</b>+354 5635600<br />
 										<b>Fax:</b>+354 5635610</div>
-									<p class="p0 extra-wrap"><b>Miscellaneous info:</b><br />
-										Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+									<p class="p0 extra-wrap"><b>Краткая информация:</b><br />
+										{% placeholder "little_info" %}
+									    {% block little_info%}{% endblock %}
 								</div>
 							</div>
 						</div>
@@ -86,26 +87,26 @@
 		<div class="indent">
 			<div class="wrapper">
 				<div class="col-1">
-					<h3><b>Contact</b> Form</h3>
+					<h3><b>Обратная связь</b></h3>
 					<form id="contacts-form" action="">
 						<fieldset>
 						<div class="field">
-							<label>Your Name:</label>
+							<label>Имя:</label>
 							<input type="text" value=""/>
 						</div>
 						<div class="field">
-							<label>Your E-mail:</label>
+							<label>Ваш E-mail:</label>
 							<input type="text" value=""/>
 						</div>
 						<div class="field">
-							<label>Your Website:</label>
+							<label>Ваш Сайт:</label>
 							<input type="text" value=""/>
 						</div>
 						<div class="field">
-							<label>Your Message:</label>
+							<label>Текст:</label>
 							<textarea cols="1" rows="1"></textarea>
 						</div>
-						<div class="wrapper"><a href="#" onclick="document.getElementById('contacts-form').submit()" class="link1"><em><b>SUBMIT</b></em></a></div>
+						<div class="wrapper"><a href="#" onclick="document.getElementById('contacts-form').submit()" class="link1"><em><b>Отправить</b></em></a></div>
 						</fieldset>
 					</form>
 				</div>
@@ -115,7 +116,7 @@
 							<div class="left-top-corner">
 								<div class="right-top-corner">
 									<div class="inner">
-										<h4><b>Latest</b> News</h4>
+										<h4><b>Новости</b></h4>
 										<ul class="news">
 											<li><a href="#">May 21, 2010</a><p>Lorem ipsum dolor sit amet, coisectur adipisicing elit, sed doeiusmo.</p></li>
 											<li><a href="#">May 12, 2010</a><p>Ut enim ad minim veniam, qnostrud exercitation ullamco.</p></li>
