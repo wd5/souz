@@ -23,9 +23,9 @@ class Production(models.Model):
     ch_models = models.CharField(max_length=32, choices=MODELS)
     ch_tuning = models.CharField(max_length=32, choices=TUNING)
     image = models.ImageField(_("Image"), upload_to="photo")
-    longdesc = tinymce.HTMLField((_("Description")))
+    long_desc = models.TextField(_("Description"))
 
     def __unicode__(self):
-        return self.name_mod
+        return '%s %s %s %s' % (self.ch_models, self.ch_tuning, self.add_date, self.name_mod)
 
 # Create your models here.
