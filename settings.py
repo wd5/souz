@@ -20,9 +20,9 @@ DEFAULT_LANGUAGE = 0
 DATABASES = {
     'default': {
         'ENGINE': 'postgresql_psycopg2',
-        'NAME': 'uatuning',
-        'USER': 'uatuning',
-        'PASSWORD': 'sevenn',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
     }
 }
 
