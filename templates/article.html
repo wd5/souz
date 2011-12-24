@@ -58,29 +58,30 @@
 			<div class="wrapper">
                 <script>
                     $(document).ready(function() {
-                        $("#accordion").accordion();
+                        $("#accordion").accordion({ clearStyle: "button" });
                     });
                 </script>
 
                 <div id="accordion">
                     <h3><a href="#">Кенгурятник</a></h3>
                     <div>
-                        {% for kung_data in kung %}
+                        {% for roo_data in roo_bar %}
                                 <div class="frame-block">
                                     <span>&nbsp;</span>
-                                    <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ kung_data.image }}">
-                                    <p>{{ kung_data.long_desc}}</p>
+                                    <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ roo_data.image }}">
+                                    <p>{{ roo_data.long_desc}}</p>
                                 </div>
                         {% endfor %}
                     </div>
-                    <h3><a href="#">Section 2</a></h3>
+                    <h3><a href="#">Пороги</a></h3>
                     <div>
-                        <p>
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
+                        {% for car_thresholds_data in car_thresholds %}
+                            <div class="frame-block">
+                                <span>&nbsp;</span>
+                                <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ car_thresholds_data.image }}">
+                                <p>{{ car_thresholds_data.long_desc}}</p>
+                            </div>
+                        {% endfor %}
                     </div>
                     <h3><a href="#">Section 3</a></h3>
                     <div>

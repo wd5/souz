@@ -6,10 +6,12 @@ from django.views.generic import simple
 from production.models import Production
 import datetime
 
-def ProductionView(request):
-    kung = Production.objects.all()
+def ProductionViewMitsubishi(request):
+    roo_bar = Production.objects.filter(ch_models="mitsubishi", ch_tuning="roo_bar")
+    car_thresholds = Production.objects.filter(ch_models="mitsubishi", ch_tuning="car_thresholds")
     ctx = {
-        'kung': kung,
+        'roo_bar': roo_bar,
+        'car_thresholds': car_thresholds,
     }
     return render_to_response('article.html', RequestContext(request, ctx))
 
