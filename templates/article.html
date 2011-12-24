@@ -4,13 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 <title>Продукция | UaTuning.com.ua</title>
+{% render_block "css" %}
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="description" content="uatuning.com.ua" />
 <meta name="keywords" content="auto tuninnig" />
 <meta name="author" content="RostNix" />
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 <link href="/media/product.css" rel="stylesheet" type="text/css" />
-<script src="/media/js/jquery-1.4.2.min.js" type="text/javascript"></script>
 <script src="/media/js/cufon-yui.js" type="text/javascript"></script>
 <script src="/media/js/cufon-replace.js" type="text/javascript"></script>
 <script src="/media/js/AZLatinWideC_400.font.js" type="text/javascript"></script>
@@ -53,61 +55,65 @@
 		</div>
 	</div>
 <!-- CONTENT -->
-		<div class="indent">
 			<div class="wrapper">
-				<div class="col-1">
-					<ul class="list">
-						<div class="accordion">
-                            <h3>Кенгурятник</h3>
-                            <p>
-                                {% for kung_data in kung %}
-                                    <img src="{{ MEDIA_URL }}{{ kung_data.image }}"> -- {{ kung_data.long_desc}}
-                                {% endfor %}
-                            </p>
+                <script>
+                    $(document).ready(function() {
+                        $("#accordion").accordion();
+                    });
+                </script>
 
-                            <h3>This is Question Two</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus,
-                                commodo lacinia massa diam vel eros. Proin eget urna.
-                                Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
+                <div id="accordion">
+                    <h3><a href="#">Кенгурятник</a></h3>
+                    <div>
+                        {% for kung_data in kung %}
+                                <div class="frame-block">
+                                    <span>&nbsp;</span>
+                                    <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ kung_data.image }}">
+                                    <p>{{ kung_data.long_desc}}</p>
+                                </div>
+                        {% endfor %}
+                    </div>
+                    <h3><a href="#">Section 2</a></h3>
+                    <div>
+                        <p>
+                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                            suscipit faucibus urna.
+                        </p>
+                    </div>
+                    <h3><a href="#">Section 3</a></h3>
+                    <div>
+                        <p>
+                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                        </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3><a href="#">Section 4</a></h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                </div>
 
-                            <h3>Another Questio here</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus,
-                                commodo lacinia massa diam vel eros. Proin eget urna.
-                                Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
 
-                            <h3>Sample heading</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus,
-                                commodo lacinia massa diam vel eros. Proin eget urna.
-                                Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
-
-                            <h3>Sample Question Heading</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                Morbi malesuada, ante at feugiat tincidunt, enim massa gravida metus,
-                                commodo lacinia massa diam vel eros. Proin eget urna.
-                                Nunc fringilla neque vitae odio. Vivamus vitae ligula.</p>
-                        </div>
-                        <script type="text/javascript">
-                        $(document).ready(function(){
-                            $(".accordion h3:first").addClass("active");
-                            $(".accordion p:not(:first)").hide();
-
-                            $(".accordion h3").click(function(){
-
-                                $(this).next("p").slideToggle("slow")
-                                .siblings("p:visible").slideUp("slow");
-                                $(this).toggleClass("active");
-                                $(this).siblings("h3").removeClass("active");
-                            });
-                        ;});
-                        </script>
-                        <a href="#"><img src="/media/images/Mitsubishi-logo.png" alt="" /></a>
-                    </ul>
-				</div>
-			</div>
-		</div>
+            </div>
 <!-- FOOTER -->
 	<div id="footer">
 		<div class="footer-nav">

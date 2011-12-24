@@ -1,11 +1,12 @@
-from django.db import models
-import sys, time
-import os
-from django import forms
+# coding: utf-8
+#from django.db import models
+#import sys, time
+#import os
+#from django import forms
 from django.utils.translation import ugettext_lazy as _
-from os.path import basename
+#from os.path import basename
 from django.db import models
-from tinymce import models as tinymce
+#from tinymce import models as tinymce
 
 MODELS = (
     ('mitsubishi', 'Mitsubishi'),
@@ -13,7 +14,7 @@ MODELS = (
     )
 
 TUNING = (
-    ('kung', 'Kung'),
+    ('roo_bar', u'Кенгурятник'),
     ('grille', 'Grille'),
     )
 
