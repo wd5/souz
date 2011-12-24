@@ -20,9 +20,9 @@ DEFAULT_LANGUAGE = 0
 DATABASES = {
     'default': {
         'ENGINE': 'postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'uatuning',
+        'USER': 'uatuning',
+        'PASSWORD': 'sevenn',
     }
 }
 
@@ -111,8 +111,7 @@ CMS_TEMPLATES = (
     ('articles.html', 'Articles Template'),
     ('contact-us.html', 'Contact Template'),
     ('sitemap.html', 'Sitemap Template'),
-    ('article.html', 'Products Template'),
-    
+
 )
 
 ROOT_URLCONF = 'urls'

@@ -8,7 +8,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^products/$', 'production.views.ProductionViewMitsubishi', name='products'),
+    url(r'^mitsubishi/', 'production.views.ProductionViewMitsubishi', name='mitsubishi'),
     url(r'^', include('cms.urls')),
 
     (r'^tinymce/',include('tinymce.urls')),

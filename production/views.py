@@ -13,5 +13,5 @@ def ProductionViewMitsubishi(request):
         'roo_bar': roo_bar,
         'car_thresholds': car_thresholds,
     }
-    return render_to_response('article.html', RequestContext(request, ctx))
+    return render_to_response('mitsubishi.html', RequestContext(request, ctx))
 
