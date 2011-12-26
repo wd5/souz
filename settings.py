@@ -20,9 +20,9 @@ DEFAULT_LANGUAGE = 0
 DATABASES = {
     'default': {
         'ENGINE': 'postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'uatuning',
+        'USER': 'uatuning',
+        'PASSWORD': '108210sevenn',
     }
 }
 
@@ -139,13 +139,12 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
-    'tinymce',
     'production',
 )
 
-TINYMCE_JS_URL = 'http://127.0.0.1:8000/media/js/tiny_mce/tiny_mce_src.js'
+#TINYMCE_JS_URL = 'http://127.0.0.1:8000/media/js/tiny_mce/tiny_mce_src.js'
 
-TINYMCE_DEFAULT_CONFIG = {
-    'theme': "advanced",
-    'mode': "textareas",
-}
+#TINYMCE_DEFAULT_CONFIG = {
+#    'theme': "advanced",
+#    'mode': "textareas",
+#}

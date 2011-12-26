@@ -11,8 +11,6 @@ urlpatterns = patterns('',
     url(r'^mitsubishi/', 'production.views.ProductionViewMitsubishi', name='mitsubishi'),
     url(r'^', include('cms.urls')),
 
-    (r'^tinymce/',include('tinymce.urls')),
-
 )
 
 if settings.DEBUG:
