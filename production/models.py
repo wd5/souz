@@ -1,12 +1,11 @@
 # coding: utf-8
-#from django.db import models
-#import sys, time
-#import os
-#from django import forms
 from django.utils.translation import ugettext_lazy as _
-#from os.path import basename
 from django.db import models
-#from tinymce import models as tinymce
+from stdimage import StdImageField
+from django.core.files.storage import FileSystemStorage
+from django.conf import settings
+
+fs = FileSystemStorage(location=settings.MEDIA_ROOT)
 
 MODELS = (
     ('mitsubishi', 'Mitsubishi'),
@@ -24,7 +23,8 @@ class Production(models.Model):
     name_mod = models.CharField(_(u"Модель"), max_length=50)
     ch_models = models.CharField(_(u"Марка авто"),max_length=32, choices=MODELS)
     ch_tuning = models.CharField(_(u"Тюнинг"), max_length=32, choices=TUNING)
-    image = models.ImageField(_(u"Фотография"), upload_to="photo")
+#    image = models.ImageField(_(u"Фотография"), upload_to="photo")
+    image = StdImageField(_(u"Фотография"), storage = fs, upload_to="photo", size=(170, 127))
     long_desc = models.TextField(_(u"Описание"))
 
     def __unicode__(self):
