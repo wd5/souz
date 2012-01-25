@@ -63,41 +63,111 @@
                 </script>
 
                 <div id="accordion">
-                    <h3><a href="#">Кенгурятник</a></h3>
+                    <h3><a href="#">Кенгурятники</a></h3>
                     <div>
                         {% for roo_data in roo_bar %}
                                 <div class="frame-block">
                                     <span>&nbsp;</span>
                                     <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ roo_data.image }}">
+                                    <p style="color:#087afb">{{ roo_data.name_mod}}</p>
+                                    <hr style="width: 680px"
                                     <p>{{ roo_data.long_desc}}</p>
                                 </div>
                         {% endfor %}
                     </div>
-                    <h3><a href="#">Пороги</a></h3>
+                    <h3><a href="#">Пороги(труба, лист)</a></h3>
                     <div>
                         {% for car_thresholds_data in car_thresholds %}
                             <div class="frame-block">
                                 <span>&nbsp;</span>
                                 <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ car_thresholds_data.image }}">
+                                <p style="color:#087afb">{{ car_thresholds_data.name_mod}}</p>
+                                <hr style="width: 680px"
                                 <p>{{ car_thresholds_data.long_desc}}</p>
                             </div>
                         {% endfor %}
                     </div>
-                    <h3><a href="#">Section 3</a></h3>
+                    <h3><a href="#">Готовые комплекты обвесов</a></h3>
+                    <div>
+                        {% for auto_body_kit_data in auto_body_kit %}
+                            <div class="frame-block">
+                                <span>&nbsp;</span>
+                                <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ auto_body_kit_data.image }}">
+                                <p style="color:#087afb">{{ auto_body_kit_data.name_mod}}</p>
+                                <hr style="width: 680px"
+                                <p>{{ auto_body_kit_data.long_desc}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <h3><a href="#">Накладки на внутренние пороги</a></h3>
+                    <div>
+                        {% for internal_thresholds_data in internal_thresholds %}
+                            <div class="frame-block">
+                                <span>&nbsp;</span>
+                                <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ internal_thresholds_data.image }}">
+                                <p style="color:#087afb">{{ internal_thresholds_data.name_mod}}</p>
+                                <hr style="width: 680px"
+                                <p>{{ internal_thresholds_data.long_desc}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <h3><a href="#">Фаркопы</a></h3>
                     <div>
                         <p>
-                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
                         </p>
-                        <ul>
-                            <li>List item one</li>
-                            <li>List item two</li>
-                            <li>List item three</li>
-                        </ul>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
                     </div>
-                    <h3><a href="#">Section 4</a></h3>
+                    <h3><a href="#">Глушители</a></h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                    <h3><a href="#">Стекловолокно(бампера, решетки, спойлера)</a></h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                    <h3><a href="#">Оптика</a></h3>
+                    <div>
+                        <p>
+                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                            mauris vel est.
+                        </p>
+                        <p>
+                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos.
+                        </p>
+                    </div>
+                    <h3><a href="#">Разное</a></h3>
                     <div>
                         <p>
                             Cras dictum. Pellentesque habitant morbi tristique senectus et netus
@@ -112,8 +182,6 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
 <!-- FOOTER -->
 	<div id="footer">

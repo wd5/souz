@@ -13,9 +13,15 @@ MODELS = (
     )
 
 TUNING = (
-    ('roo_bar', u'Кенгурятник'),
-    ('car_thresholds', u'Пороги'),
-    ('a_xenon', u'Авто Ксенон')
+    ('roo_bar', u'Кенгурятники'),
+    ('car_thresholds', u'Пороги(труба, лист)'),
+    ('auto_body_kit', u'Готовые комплекты обвесов'),
+    ('internal_thresholds', u'Накладки на внутренние пороги'),
+    ('hitch', u'Фаркопы'),
+    ('mufflers', u'Глушители'),
+    ('glass_fiber', u'Стекловолокно(бампера, решетки, споллера)'),
+    ('optics', u'Оптика'),
+    ('others', u'Разное'),
     )
 
 class Production(models.Model):
@@ -29,5 +35,8 @@ class Production(models.Model):
 
     def __unicode__(self):
         return u'%s | %s | %s | %s' % (self.ch_models, self.ch_tuning, self.add_date, self.name_mod)
+
+    class Meta:
+        ordering = ('name_mod',)
 
 # Create your models here.
