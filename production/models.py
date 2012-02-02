@@ -4,6 +4,7 @@ from django.db import models
 from stdimage import StdImageField
 from django.core.files.storage import FileSystemStorage
 from django.conf import settings
+from settings import MEDIA_URL
 
 fs = FileSystemStorage(location=settings.MEDIA_ROOT)
 
@@ -29,9 +30,12 @@ class Production(models.Model):
     name_mod = models.CharField(_(u"Модель"), max_length=50)
     ch_models = models.CharField(_(u"Марка авто"),max_length=32, choices=MODELS)
     ch_tuning = models.CharField(_(u"Тюнинг"), max_length=32, choices=TUNING)
-#    image = models.ImageField(_(u"Фотография"), upload_to="photo")
-    image = StdImageField(_(u"Фотография"), storage = fs, upload_to="photo", size=(170, 127))
+    image_all = StdImageField(_(u"Фотография"), storage = fs, upload_to="photo", blank=True, size=(800, 600), thumbnail_size=(170, 127, True))
     long_desc = models.TextField(_(u"Описание"))
+
+    def img_thumb(self):
+        img_thumb_prev = 'MEDIA_URL + str(self.image_all)'
+        return img_thumb_prev
 
     def __unicode__(self):
         return u'%s | %s | %s | %s' % (self.ch_models, self.ch_tuning, self.add_date, self.name_mod)

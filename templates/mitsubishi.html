@@ -65,15 +65,13 @@
                 <div id="accordion">
                     <h3><a href="#">Кенгурятники</a></h3>
                     <div>
-                        {% for roo_data in roo_bar %}
-                                <div class="frame-block">
-                                    <span>&nbsp;</span>
-                                    <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ roo_data.image }}">
-                                    <p style="color:#087afb">{{ roo_data.name_mod}}</p>
-                                    <hr style="width: 680px"
-                                    <p>{{ roo_data.long_desc}}</p>
-                                </div>
-                        {% endfor %}
+                        <div class="frame-block">
+                        <span>&nbsp;</span>
+                        <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ roo_bar_i_th }}">
+                        <p style="color:#087afb">{{ roo_bar_i_m }}</p>
+                        <hr style="width: 680px"
+                        <p>{{ roo_bar_i_d }}</p>
+                        </div>
                     </div>
                     <h3><a href="#">Пороги(труба, лист)</a></h3>
                     <div>
