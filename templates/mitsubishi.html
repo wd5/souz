@@ -77,16 +77,15 @@
                     </div>
                     <h3><a href="#">Пороги(труба, лист)</a></h3>
                     <div>
-                        <div>
-                            {% for car_thresholds_data in car_thresholds %}
-                                <div class="frame-block">
-                                    <span>&nbsp;</span>
-                                    <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ car_thresholds_data.image_th }}">
-                                    <p style="color:#087afb">{{ car_thresholds_data.name_mod }}</p>
-                                    <hr style="width: 680px"
-                                    <p>{{ car_thresholds_data.long_desc }}</p>
-                                </div>
-                            {% endfor %}
+                        {% for car_thresholds_data in car_thresholds %}
+                            <div class="frame-block">
+                            <span>&nbsp;</span>
+                            <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ car_thresholds_data.image_th }}">
+                            <p style="color:#087afb">{{ car_thresholds_data.name_mod }}</p>
+                            <hr style="width: 680px"
+                            <p>{{ car_thresholds_data.long_desc }}</p>
+                            </div>
+                        {% endfor %}
                     </div>
                     <h3><a href="#">Готовые комплекты обвесов</a></h3>
                     <div>
