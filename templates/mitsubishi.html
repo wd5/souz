@@ -92,10 +92,9 @@
                         {% for auto_body_kit_data in auto_body_kit %}
                             <div class="frame-block">
                                 <span>&nbsp;</span>
-                                <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ auto_body_kit_data.image }}">
-                                <p style="color:#087afb">{{ auto_body_kit_data.name_mod}}</p>
+                                <img style="float: left; margin-right: 20px" id="img1" src="{{ MEDIA_URL }}{{ auto_body_kit_data.image_th }}">
+                                <p style="color:#087afb">{{ auto_body_kit_data.name_mod }}</p>
                                 <hr style="width: 680px"
-                                <p>{{ auto_body_kit_data.long_desc}}</p>
                             </div>
                         {% endfor %}
                     </div>
